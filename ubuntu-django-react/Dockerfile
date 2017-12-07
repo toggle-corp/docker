@@ -20,7 +20,12 @@ RUN apt-get update -y && \
         python3 \
         python3-dev \
         python3-setuptools \
-        python3-pip
+        python3-pip \
+
+        # Required by cloudwatch scripts
+        unzip \
+        libwww-perl \
+        libdatetime-perl
 
 # Support utf-8
 RUN locale-gen en_US.UTF-8
