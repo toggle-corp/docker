@@ -35,7 +35,7 @@ ENV LANG en_US.UTF-8
 RUN pip3 install uwsgi
 
 # Install node for react
-RUN curl -sL https://deb.nodesource.com/setup_6.x | bash -
+RUN curl -sL https://deb.nodesource.com/setup_7.x | bash -
 RUN apt-get install -y nodejs
 
 # Install yarn for react
