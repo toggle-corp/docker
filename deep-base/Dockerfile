@@ -11,6 +11,8 @@ RUN apt-get clean && \
 # Update and install common packages with apt
 RUN apt-get update -y && \
     apt-get install -y \
+
+        # Basic Packages
         git \
         locales \
         vim \
@@ -21,6 +23,11 @@ RUN apt-get update -y && \
         python3-dev \
         python3-setuptools \
         python3-pip \
+
+        # Deep Required Packages
+        binutils libproj-dev gdal-bin \
+        libreoffice \
+        gawk \
 
         # Required by cloudwatch scripts
         unzip \
